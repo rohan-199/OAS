@@ -1,0 +1,44 @@
+openapi: 3.0.0
+info:
+  contact:
+    name: rohan
+  description: OpenAPI Specification for the Apigee mock target service route.
+  version: 1.0.0
+  title: Mock Target API
+tags:
+  - name: rohan
+    description: "tnhg"
+paths:
+  /ip:
+    get:
+      summary: View IP address
+      operationId: "1234"
+      tags:
+      - rohan
+      description: View the IP address of the client in JSON format.
+      responses:
+        "200":
+          description: Success
+  /xml:
+    get:
+      summary: View XML response
+      tags:
+      - rohan
+      operationId: "123"
+      description: View a sample response in XML format.
+      responses:
+        "200":
+          description: Success
+  /json:
+    get:
+      summary: View JSON response
+      tags:
+      - rohan
+      operationId: "12"
+      description: View a sample response in JSON format.
+      responses:
+        "200":
+          description: Success
+servers:
+  - url: http://mocktarget.apigee.net
+  - url: https://mocktarget.apigee.net
